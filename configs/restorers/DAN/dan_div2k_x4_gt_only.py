@@ -32,8 +32,8 @@ test_cfg = dict(metrics=['PSNR'], crop_border=8, convert_to='y')
 kernel_options={
     'random':True,
     'kernel_size':31,
-    'sigma_min':0.5,
-    'sigma_max':6.0,
+    'sigma_min':0.6,
+    'sigma_max':5.0,
     'isotropic': False,
     'random_disturb': True
 }
