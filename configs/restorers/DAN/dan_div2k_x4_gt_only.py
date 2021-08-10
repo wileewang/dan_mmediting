@@ -28,6 +28,16 @@ model = dict(
 train_cfg = None
 test_cfg = dict(metrics=['PSNR'], crop_border=8, convert_to='y')
 
+# config for blur kernel
+kernel_options={
+    'random':True,
+    'kernel_size':31,
+    'sigma_min':0.5,
+    'sigma_max':6.0,
+    'isotropic': False,
+    'random_disturb': True
+}
+
 # dataset settings
 train_dataset_type = 'SRFolderGTDataset'
 val_dataset_type = 'BSRTestFolderDataset'
@@ -42,7 +52,7 @@ train_pipeline = [
         type='LoadKernelFromFile',
         key='kernel'),
     dict(type='RescaleToZeroOne', keys=['gt']),
-    dict(type='Degradation', keys=['gt']),
+    dict(type='Degradation', keys=['gt'], opt=kernel_options),
     dict(
         type='Normalize',
         keys=['lq', 'gt'],
