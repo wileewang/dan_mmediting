@@ -151,12 +151,12 @@ data = dict(
 )
 
 # optimizer
-optimizers = dict(generator=dict(type='Adam', lr=2e-4, betas=(0.9, 0.99)))
+optimizers = dict(generator=dict(type='Adam', lr=6.25e-6, betas=(0.9, 0.999)))
 
 # learning policy
 total_iters = 400000
 # lr_config = dict(policy='Step', by_epoch=False, step=[400000], gamma=0.5, min=1.25e-05)
-lr_config = dict(policy='Step', by_epoch=False, step=[400000], gamma=0.5, min_lr=1.25e-05)
+lr_config = dict(policy='Step', by_epoch=False, step=[10000, 20000, 300000], gamma=0.5)
 
 checkpoint_config = dict(interval=5000, save_optimizer=True, by_epoch=False)
 # remove gpu_collect=True in non distributed training
