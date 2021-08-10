@@ -48,9 +48,6 @@ train_pipeline = [
         io_backend='disk',
         key='gt',
         channel_order='rgb'),
-    dict(
-        type='LoadKernelFromFile',
-        key='kernel'),
     dict(type='RescaleToZeroOne', keys=['gt']),
     dict(type='Degradation', keys=['gt'], opt=kernel_options),
     dict(
