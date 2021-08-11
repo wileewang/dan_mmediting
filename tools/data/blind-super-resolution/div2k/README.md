@@ -51,7 +51,7 @@ mmediting
 │   │   │   ├── X2
 │   │   │   ├── X3
 │   │   │   ├── X4
-│   │   ├── DIV2K_train_kernel_size_21
+│   │   ├── DIV2K_train_kernel
 │   │   ├── DIV2K_valid_HR
 │   │   pca_matrix.pth
 ...
