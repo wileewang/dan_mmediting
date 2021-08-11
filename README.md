@@ -13,6 +13,7 @@ You can just use two config files：
  - [dan_div2k_x4_gt_only.py](https://github.com/wileechou/dan_mmediting/blob/master/configs/restorers/DAN/dan_div2k_x4_gt_only.py). Remember replace `augmentation.py` with ours in mmediting
  - [DAN_DIV2K_x4_v2.py](https://github.com/wileechou/dan_mmediting/blob/master/configs/restorers/DAN/DAN_DIV2K_x4_v2.py). 
 
+Then, training command is the same as [openmmlab/mmediting](https://github.com/open-mmlab/mmediting)
 ## Evaluation
 The evaluation for two methods are the same because we define same pipelines. Just be careful with datasetloader we use.
 Model weights: [Baidu:eqp3](https://pan.baidu.com/s/1NfURCcWRMMb517r8gn2DZQ)
