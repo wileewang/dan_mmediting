@@ -16,4 +16,5 @@ You can just use two config files：
 Then, training command is the same as [openmmlab/mmediting](https://github.com/open-mmlab/mmediting)
 ## Evaluation
 The evaluation for two methods are the same because we define same pipelines. Just be careful with datasetloader we use.
+
 Model weights: [Baidu:eqp3](https://pan.baidu.com/s/1NfURCcWRMMb517r8gn2DZQ)
